@@ -45,6 +45,27 @@ static void fun_loop(void)
                 BSP_LED_FUN.on(BSP_LED_NUM_2);
             }else if(kvm.left_count==3){
                 BSP_LED_FUN.on(BSP_LED_NUM_1);
+            }else if(kvm.left_count==4){
+                BSP_LED_FUN.on(BSP_LED_NUM_4);
+                if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%2)==0){
+                    BSP_LED_FUN.on(BSP_LED_NUM_3);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%2)==1){
+                    BSP_LED_FUN.on(BSP_LED_NUM_2);
+                }
+            }else if(kvm.left_count==5){
+                BSP_LED_FUN.on(BSP_LED_NUM_3);
+                if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%2)==0){
+                    BSP_LED_FUN.on(BSP_LED_NUM_2);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==1){
+                    BSP_LED_FUN.on(BSP_LED_NUM_4);
+                }
+            }else if(kvm.left_count==6){
+                BSP_LED_FUN.on(BSP_LED_NUM_2);
+                if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%2)==0){
+                    BSP_LED_FUN.on(BSP_LED_NUM_3);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%2)==1){
+                    BSP_LED_FUN.on(BSP_LED_NUM_4);
+                }
             }
         }else{
             if(kvm.right_count==0){
@@ -60,15 +81,52 @@ static void fun_loop(void)
                 BSP_LED_FUN.on(BSP_LED_NUM_4);
             }else if(kvm.right_count==3){
                 if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==0){
-                    BSP_LED_FUN.on(BSP_LED_NUM_4);
-                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==1){
-                    BSP_LED_FUN.on(BSP_LED_NUM_3);
-                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==2){
                     BSP_LED_FUN.on(BSP_LED_NUM_1);
-                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==3){
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==1){
                     BSP_LED_FUN.on(BSP_LED_NUM_2);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==2){
+                    BSP_LED_FUN.on(BSP_LED_NUM_3);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%4)==3){
+                    BSP_LED_FUN.on(BSP_LED_NUM_4);
+                }
+            }else if(kvm.right_count==4){
+                BSP_LED_FUN.on(BSP_LED_NUM_4);
+                if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==0){
+                    BSP_LED_FUN.on(BSP_LED_NUM_2);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==1){
+                    BSP_LED_FUN.on(BSP_LED_NUM_3);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==2){
+                    BSP_LED_FUN.on(BSP_LED_NUM_1);
+                }
+            }else if(kvm.right_count==5){
+                BSP_LED_FUN.on(BSP_LED_NUM_3);
+                if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==0){
+                    BSP_LED_FUN.on(BSP_LED_NUM_1);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==1){
+                    BSP_LED_FUN.on(BSP_LED_NUM_2);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==2){
+                    BSP_LED_FUN.on(BSP_LED_NUM_4);
+                }
+            }else if(kvm.right_count==6){
+                BSP_LED_FUN.on(BSP_LED_NUM_2);
+                if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==0){
+                    BSP_LED_FUN.on(BSP_LED_NUM_1);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==1){
+                    BSP_LED_FUN.on(BSP_LED_NUM_3);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==2){
+                    BSP_LED_FUN.on(BSP_LED_NUM_4);
+                }
+            }else if(kvm.right_count==7){
+                BSP_LED_FUN.on(BSP_LED_NUM_1);
+                if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==0){
+                    BSP_LED_FUN.on(BSP_LED_NUM_4);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==1){
+                    BSP_LED_FUN.on(BSP_LED_NUM_2);
+                }else if(((BSP_SYSTICK_FUN.get_tick()/usb_all_control_led_tick)%3)==2){
+                    BSP_LED_FUN.on(BSP_LED_NUM_3);
                 }
             }
+            
         }
         
         if(sw.state==0){

@@ -446,7 +446,7 @@ I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
 I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
 F (..\bsp\BSP_KVM.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_kvm.o -MD)
-I (..\bsp\BSP_KVM.h)(0x69EC6222)
+I (..\bsp\BSP_KVM.h)(0x6A3A2452)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
 I (..\bsp\BSP.h)(0x69EC6222)
@@ -515,7 +515,7 @@ I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(
 I (..\bsp\bsp_key.h)(0x69EC6222)
 I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-F (..\app\APP_LED.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_led.o -MD)
+F (..\app\APP_LED.c)(0x6A3A452D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_led.o -MD)
 I (..\app\APP_LED.h)(0x69EC6222)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
@@ -533,11 +533,11 @@ I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
 I (..\app\APP_KVM.h)(0x69EC6222)
 I (..\app\APP_SWITCH.h)(0x69EC6222)
-F (..\app\APP_KVM.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_kvm.o -MD)
+F (..\app\APP_KVM.c)(0x6A3A2EC2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_kvm.o -MD)
 I (..\app\APP_KVM.h)(0x69EC6222)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP_KVM.h)(0x69EC6222)
+I (..\bsp\BSP_KVM.h)(0x6A3A2452)
 I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
 I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
 I (..\app\APP_FLASH.h)(0x69EC6222)

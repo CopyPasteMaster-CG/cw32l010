@@ -19,19 +19,31 @@ static void fun_init(void)
 }
 static void fun_loop(void)
 {
-    static const bool kvm_out_state[2][4][4]={
+    static const bool kvm_out_state[2][8][4]={
         {
             {   false,  false,  false,  false,  },  //  单port1USB接口功能激活
             {   true,   false,  false,  false,  },  //  单port2USB接口功能激活
             {   false,  true,   false,  false,  },  //  单port3USB接口功能激活
             {   true,   true,   false,  false,  },  //  单port4USB接口功能激活
+
+            {   false,  false,  true,   true,   },  //  KM在一大两小分布的范围内进行穿越
+            {   false,  true,   true,   true,   },  //  KM在一大两小分布的范围内进行穿越
+            {   true,   false,   true,  true,   },  //  KM在一大两小分布的范围内进行穿越
+
         },
         {
             {   false,  false,  true,   false,  },  //  KM只在pot1/2两个口组成左右分布的范围内进行穿越
             {   true,   false,  true,   false,  },  //  KM只在pot3/4两个口组成左右分布的范围内进行穿越
             {   false,  false,  false,  true,   },  //  KM在port1234四个口组成一个田字格范围内穿越
             {   true,   true,   true,   true,   },  //  同步控制port1234
+
+            {   false,  true,   false,  true,   },  //  KM在一大三小分布的范围内进行穿越
+            {   true,   false,  false,  true,   },  //  KM在一大三小分布的范围内进行穿越
+            {   true,   true,   false,  true,   },  //  KM在一大三小分布的范围内进行穿越
+            {   false,  true,   true,   false,  },  //  KM在一大三小分布的范围内进行穿越
+
         },
+
     };
     
     static uint32_t tick;
@@ -57,11 +69,11 @@ static void fun_loop(void)
         //  防止两颗按键都按下的状态
         if(key_err==false){
             if((key.state[APP_KEY_NUM_LEFT]==true)&&(last_key.state[APP_KEY_NUM_LEFT]==false)){
-                data.left_count=(data.left_count+1)%4;
+                data.left_count=(data.left_count+1)%7;
                 data.select_mode=0;
             }
             if((key.state[APP_KEY_NUM_RIGHT]==true)&&(last_key.state[APP_KEY_NUM_RIGHT]==false)){
-                data.right_count=(data.right_count+1)%4;
+                data.right_count=(data.right_count+1)%8;
                 data.select_mode=1;
             }
         }
@@ -74,6 +86,7 @@ static void fun_loop(void)
         bsp.state[1]    =   kvm_out_state[data.select_mode][temp][1];
         bsp.state[2]    =   kvm_out_state[data.select_mode][temp][2];
         bsp.state[3]    =   kvm_out_state[data.select_mode][temp][3];
+
         
         if(start_kvm || (BSP_SYSTICK_FUN.get_tick()>1000)){
             BSP_KVM_FUN.out(&bsp);

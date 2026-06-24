@@ -6,7 +6,7 @@
 #include "stdbool.h"
 
 typedef struct{
-    bool state[4];
+    bool state[8];
 }BSP_KVM_DATA_Typedefstruct;
 
 typedef struct{
