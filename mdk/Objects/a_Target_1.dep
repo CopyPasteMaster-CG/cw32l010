@@ -1,553 +1,0 @@
-Dependencies for Project 'a', Target 'Target_1': (DO NOT MODIFY !)
-CompilerVersion: 6240000::V6.24::ARMCLANG
-F (..\start\startup_cw32l010.s)(0x69EC6222)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_cw32l010.o)
-F (..\mcu_lib\src\cw32l010_adc.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_adc.o -MD)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_adc.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\mcu_lib\src\cw32l010_atim.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_atim.o -MD)
-I (..\mcu_lib\inc\cw32l010_atim.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_btim.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_btim.o -MD)
-I (..\mcu_lib\inc\cw32l010_btim.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\mcu_lib\src\cw32l010_crc.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_crc.o -MD)
-I (..\mcu_lib\inc\cw32l010_crc.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-F (..\mcu_lib\src\cw32l010_debug.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_debug.o -MD)
-I (..\mcu_lib\inc\cw32l010_debug.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-F (..\mcu_lib\src\cw32l010_digitalsign.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_digitalsign.o -MD)
-I (..\mcu_lib\inc\cw32l010_digitalsign.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-F (..\mcu_lib\src\cw32l010_flash.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_flash.o -MD)
-I (..\mcu_lib\inc\cw32l010_flash.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_gpio.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_gpio.o -MD)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\mcu_lib\src\cw32l010_gtim.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_gtim.o -MD)
-I (..\mcu_lib\inc\cw32l010_gtim.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\mcu_lib\src\cw32l010_i2c.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_i2c.o -MD)
-I (..\mcu_lib\inc\cw32l010_i2c.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_iwdt.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_iwdt.o -MD)
-I (..\mcu_lib\inc\cw32l010_iwdt.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\mcu_lib\src\cw32l010_lptim.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_lptim.o -MD)
-I (..\mcu_lib\inc\cw32l010_lptim.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-F (..\mcu_lib\src\cw32l010_lvd.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_lvd.o -MD)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_lvd.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_pwr.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_pwr.o -MD)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_pwr.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_ram.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_ram.o -MD)
-I (..\mcu_lib\inc\cw32l010_ram.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_rtc.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_rtc.o -MD)
-I (..\mcu_lib\inc\cw32l010_rtc.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-F (..\mcu_lib\src\cw32l010_spi.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_spi.o -MD)
-I (..\mcu_lib\inc\cw32l010_spi.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_sysctrl.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_sysctrl.o -MD)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_systick.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_systick.o -MD)
-I (..\mcu_lib\inc\cw32l010_systick.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-F (..\mcu_lib\src\cw32l010_uart.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_uart.o -MD)
-I (..\mcu_lib\inc\cw32l010_uart.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\cw32l010_vc.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/cw32l010_vc.o -MD)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_vc.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_adc.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\mcu_lib\src\i2c_eeprom.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/i2c_eeprom.o -MD)
-I (..\mcu_lib\inc\i2c_eeprom.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010_i2c.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\mcu_lib\src\system_cw32l010.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/system_cw32l010.o -MD)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-F (..\main\interrupt.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/interrupt.o -MD)
-F (..\main\main.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/main.o -MD)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-I (..\bsp\BSP_RCC.h)(0x69EC6222)
-I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
-I (..\app\APP_FLASH.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\app\APP_LED.h)(0x69EC6222)
-I (..\app\APP_KEY.h)(0x69EC6222)
-I (..\app\APP_KVM.h)(0x69EC6222)
-I (..\app\APP_SWITCH.h)(0x69EC6222)
-F (..\bsp\BSP.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp.o -MD)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-F (..\bsp\BSP_LED.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_led.o -MD)
-I (..\bsp\BSP_LED.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\bsp\BSP_RCC.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_rcc.o -MD)
-I (..\bsp\BSP_RCC.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\bsp\BSP_SYSTICK.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_systick.o -MD)
-I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010_systick.h)(0x69EC6222)
-F (..\bsp\BSP_KEY.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_key.o -MD)
-I (..\bsp\BSP_KEY.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\bsp\BSP_KVM.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_kvm.o -MD)
-I (..\bsp\BSP_KVM.h)(0x6A3A2452)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\bsp\BSP_SWITCH.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_switch.o -MD)
-I (..\bsp\BSP_SWITCH.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-F (..\bsp\BSP_FLASH.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/bsp_flash.o -MD)
-I (..\bsp\BSP_FLASH.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\main\main.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm0plus.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x6A2A0EAA)
-I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armclang.h)(0x6A2A0EAA)
-I (..\mcu_lib\inc\cw32l010_gpio.h)(0x69EC6222)
-I (..\mcu_lib\inc\system_cw32l010.h)(0x69EC6222)
-I (..\mcu_lib\inc\base_types.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x68135C44)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x68135C30)
-I (..\mcu_lib\inc\cw32l010_sysctrl.h)(0x69EC6222)
-I (..\mcu_lib\inc\cw32l010_flash.h)(0x69EC6222)
-F (..\app\APP.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app.o -MD)
-I (..\app\APP.h)(0x69EC6222)
-I (..\app\APP_KEY.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-F (..\app\APP_KEY.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_key.o -MD)
-I (..\app\APP_KEY.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\bsp_key.h)(0x69EC6222)
-I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-F (..\app\APP_LED.c)(0x6A3A452D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_led.o -MD)
-I (..\app\APP_LED.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP_LED.h)(0x69EC6222)
-I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\app\APP_KVM.h)(0x69EC6222)
-I (..\app\APP_SWITCH.h)(0x69EC6222)
-F (..\app\APP_FLASH.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_flash.o -MD)
-I (..\app\APP_FLASH.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP_FLASH.h)(0x69EC6222)
-I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\app\APP_KVM.h)(0x69EC6222)
-I (..\app\APP_SWITCH.h)(0x69EC6222)
-F (..\app\APP_KVM.c)(0x6A3A2EC2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_kvm.o -MD)
-I (..\app\APP_KVM.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP_KVM.h)(0x6A3A2452)
-I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\app\APP_FLASH.h)(0x69EC6222)
-I (..\app\APP_KEY.h)(0x69EC6222)
-F (..\app\APP_SWITCH.c)(0x69EC6222)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../mcu_lib/inc -I ../main -I ../bsp -I ../app-I./RTE/_Target_1-IC:/Users/Administrator/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include-IC:/Users/Administrator/AppData/Local/Arm/Packs/WHXY/CW32L010_DFP/1.0.2/Device/Include-D__UVISION_VERSION="538" -D_RTE_ -D_RTE_-o ./objects/app_switch.o -MD)
-I (..\app\APP_SWITCH.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x68135C42)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x68135C42)
-I (..\bsp\BSP_SWITCH.h)(0x69EC6222)
-I (..\bsp\BSP_SYSTICK.h)(0x69EC6222)
-I (C:\Users\Administrator\AppData\Local\Keil_v5\ARM\ARMCLANG\include\string.h)(0x68135C44)
-I (..\app\APP_FLASH.h)(0x69EC6222)
-I (..\app\APP_KEY.h)(0x69EC6222)

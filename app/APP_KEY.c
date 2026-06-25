@@ -1,4 +1,3 @@
-
 #include "APP_KEY.h"
 #include "bsp_key.h"
 #include "BSP_SYSTICK.h"

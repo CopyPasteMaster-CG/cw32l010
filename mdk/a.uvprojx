@@ -568,6 +568,11 @@
               <FileType>1</FileType>
               <FilePath>..\bsp\BSP_FLASH.c</FilePath>
             </File>
+            <File>
+              <FileName>BSP_UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bsp\BSP_UART.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -602,6 +607,11 @@
               <FileName>APP_SWITCH.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\app\APP_SWITCH.c</FilePath>
+            </File>
+            <File>
+              <FileName>APP_UART.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\app\APP_UART.c</FilePath>
             </File>
           </Files>
         </Group>

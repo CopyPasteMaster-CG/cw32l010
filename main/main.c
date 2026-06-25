@@ -3,7 +3,7 @@
 
 #include "BSP_RCC.h"
 #include "BSP_SYSTICK.h"
-
+#include "BSP_UART.h"
 
 #include "APP_FLASH.h"
 #include "APP_LED.h"
@@ -16,13 +16,21 @@ int main(void)
     BSP_RCC_FUN.init();
     BSP_SYSTICK_FUN.init();
     
+
     APP_FLASH_FUN.init();
     APP_LED_FUN.init();
     APP_KEY_FUN.init();
     APP_KVM_FUN.init();
     APP_SWITCH_FUN.init();
-    
+    BSP_UART_FUN.init();
+	
     while(1){
+
+//        uint8_t buff[]={0xA5,0xA5,0xA5};
+//        BSP_UART_FUN.UART_send_buffer(BSP_UART_AX6800,buff,3);
+//        BSP_UART_FUN.UART_send_buffer(BSP_UART_N32,buff,3);
+//	    BSP_SYSTICK_FUN.delay_ms(100);
+
         APP_FLASH_FUN.loop();
         APP_KEY_FUN.loop();
         APP_LED_FUN.loop();
@@ -39,3 +47,4 @@ void assert_failed(uint8_t *file, uint32_t line)
        tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
     /* USER CODE END 6 */
 }
+

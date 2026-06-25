@@ -1,0 +1,29 @@
+# MDK compile output
+*.o
+*.d
+*.axf
+*.htm
+*.lnp
+*.dep
+*.iex
+*.build_log.htm
+
+# Map files
+*.map
+
+# IDE config
+*.uvguix.*
+*.uvoptx
+
+# Build directories
+/mdk/Objects/
+/mdk/Listings/
+
+# Other
+*.crf
+*.dni
+*.lst
+*.obj
+*.lib
+*.exe
+*.elf
