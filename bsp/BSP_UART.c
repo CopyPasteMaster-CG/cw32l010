@@ -36,7 +36,7 @@ static void fun_init(void)
     SYSCTRL_APBPeriphClk_Enable1(BSP_UART_AX6800_CLK,ENABLE);
     SYSCTRL_APBPeriphClk_Enable1(BSP_UART_N32_CLK,ENABLE);
 
-    uart_init.UART_BaudRate = BSP_UART_BAUDRATE;
+   
 
     /* 16倍过采样 */
     uart_init.UART_Over = UART_Over_16;
@@ -62,13 +62,18 @@ static void fun_init(void)
     /* 不使用RTS、CTS硬件流控 */
     uart_init.UART_HardwareFlowControl = UART_HardwareFlowControl_None;
 
-    /* 开启发送 */
+   
+	 	uart_init.UART_BaudRate = BSP_AX6800_UART_BAUDRATE;
     uart_init.UART_Mode = UART_Mode_Tx;
     UART_Init(BSP_UART_AX6800, &uart_init);
-
+	 
+		uart_init.UART_BaudRate = BSP_N32_UART_BAUDRATE;
     /* 同时开启发送和接收 */
     uart_init.UART_Mode =UART_Mode_Rx | UART_Mode_Tx;
     UART_Init(BSP_UART_N32, &uart_init);
+		
+		 /* 开启发送 */
+
 
     UART_ClearITPendingBit(BSP_UART_N32, UART_IT_RC);
     UART_ITConfig(BSP_UART_N32, UART_IT_RC, ENABLE);

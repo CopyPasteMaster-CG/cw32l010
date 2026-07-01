@@ -16,8 +16,11 @@
 #define BSP_UART_N32                      CW_UART1
 #define BSP_UART_N32_CLK                  SYSCTRL_APB1_PERIPH_UART1
 
-#define BSP_UART_BAUDRATE                 115200U
+#define BSP_AX6800_UART_BAUDRATE          115200U
+
 #define BSP_UART_UCLK_FREQ                48000000U
+
+#define BSP_N32_UART_BAUDRATE             4800U
 
 
 typedef struct
