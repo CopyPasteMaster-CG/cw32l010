@@ -15,6 +15,7 @@ typedef struct {
 typedef struct {
     void ( * init ) ( void ) ;
     void ( * loop ) ( void ) ;
+    bool ( * set_mode ) ( uint8_t mode ) ;
     void ( * read ) ( APP_KVM_DATA_Typedefstruct * da ) ;
 }APP_KVM_FUN_Typestruct;
 extern const APP_KVM_FUN_Typestruct APP_KVM_FUN;

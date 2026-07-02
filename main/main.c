@@ -26,10 +26,6 @@ int main(void)
 	
     while(1){
 
-//        uint8_t buff[]={0xA5,0xA5,0xA5};
-//        BSP_UART_FUN.UART_send_buffer(BSP_UART_AX6800,buff,3);
-//        BSP_UART_FUN.UART_send_buffer(BSP_UART_N32,buff,3);
-//	    BSP_SYSTICK_FUN.delay_ms(100);
 
         APP_FLASH_FUN.loop();
         APP_KEY_FUN.loop();

@@ -1,4 +1,5 @@
 #include "APP_UART.h"
+#include "APP_KVM.h"
 #include <stdint.h>
 
 #define KVM_FRAME_HEAD1  0x55
@@ -57,11 +58,12 @@ void KVM_UART_HandleFrame(uint8_t cmd, uint8_t mode)
     {
         case KVM_CMD_SET_MODE:
         {
-            if ((mode >= 0x01) && (mode <= 0x0F))
+            if ((mode >= 0x01) && (mode <= 0x0F) )
             {
 
                 //接收并设置模式
                 /* 返回实际设置成功的模式 */
+                APP_KVM_FUN.set_mode(mode);
                 KVM_UART_SendFrame(BSP_UART_AX6800,KVM_CMD_SET_MODE, mode);
                 //KVM_UART_SendFrame(BSP_UART_N32,KVM_CMD_ACK, mode);
             }

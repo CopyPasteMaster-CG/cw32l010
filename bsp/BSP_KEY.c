@@ -42,6 +42,8 @@ static void fun_read(BSP_KEY_DATA_Typedefstruct * key)
     key->state[0]   =   (BSP_FUN_GPIO.Read(&key_1)==0);
     key->state[1]   =   (BSP_FUN_GPIO.Read(&key_2)==0);
     key->state[2]   =   (BSP_FUN_GPIO.Read(&key_3)==0);
+	
+	
 }
 
 const BSP_KEY_FUN_Typedefstruct BSP_KEY_FUN={

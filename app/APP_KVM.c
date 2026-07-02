@@ -6,7 +6,7 @@
 #include "APP_UART.h"
 
 static APP_KVM_DATA_Typedefstruct data;
-
+uint8_t temp =0;
 static const uint8_t kvm_uart_mode[2][8] =
 {
     {
@@ -44,6 +44,33 @@ static uint8_t get_uart_mode(void)
 
 
 
+static bool fun_set_mode(uint8_t mode)
+{
+    uint8_t i;
+
+    for (i = 0; i < 7; i++)
+    {
+        if (kvm_uart_mode[0][i] == mode)
+        {
+            data.left_count = i;
+            data.select_mode = 0;
+            return true;
+        }
+    }
+
+    for (i = 0; i < 8; i++)
+    {
+        if (kvm_uart_mode[1][i] == mode)
+        {
+            data.right_count = i;
+            data.select_mode = 1;
+            return true;
+        }
+    }
+
+    return false;
+}
+
 static void fun_init(void)
 {
     APP_FLASH_DATA_Typedefstruct flash;
@@ -53,7 +80,6 @@ static void fun_init(void)
     data.right_count = flash.USB_KVM.right_count % 8;
     data.select_mode = flash.USB_KVM.select_mode != 0;
 }
-
 static void fun_loop(void)
 {
     static uint32_t tick;
@@ -98,7 +124,7 @@ static void fun_loop(void)
 
         if (mode_changed)
         {
-             KVM_UART_SendFrame(BSP_UART_AX6800,KVM_CMD_SET_MODE, get_uart_mode());
+             KVM_UART_SendFrame(BSP_UART_AX6800,KVM_CMD_SET_MODE,get_uart_mode());
              KVM_UART_SendFrame(BSP_UART_N32,KVM_CMD_SET_MODE, get_uart_mode());
         }
 
@@ -115,5 +141,6 @@ const APP_KVM_FUN_Typestruct APP_KVM_FUN =
 {
     .init = fun_init,
     .loop = fun_loop,
+    .set_mode = fun_set_mode,
     .read = fun_read,
 };
