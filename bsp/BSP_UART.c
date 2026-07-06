@@ -23,8 +23,13 @@ static void uart_gpio_init(void)
     gpio_init.Pins = GPIO_PIN_3;
     gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_Init(CW_GPIOA, &gpio_init);
+		
+	gpio_init.Pins = GPIO_PIN_4;
+    gpio_init.Mode = GPIO_MODE_INPUT_PULLUP;
+    GPIO_Init(CW_GPIOA, &gpio_init);
     
     PA03_AFx_UART2TXD();
+	PA04_AFx_UART2RXD();
 }
 
 static void fun_init(void)
@@ -63,12 +68,11 @@ static void fun_init(void)
     uart_init.UART_HardwareFlowControl = UART_HardwareFlowControl_None;
 
    
-	 	uart_init.UART_BaudRate = BSP_AX6800_UART_BAUDRATE;
-    uart_init.UART_Mode = UART_Mode_Tx;
+	uart_init.UART_BaudRate = BSP_AX6800_UART_BAUDRATE;
+    uart_init.UART_Mode = UART_Mode_Rx|UART_Mode_Tx;
     UART_Init(BSP_UART_AX6800, &uart_init);
 	 
-		uart_init.UART_BaudRate = BSP_N32_UART_BAUDRATE;
-    /* 同时开启发送和接收 */
+	uart_init.UART_BaudRate = BSP_N32_UART_BAUDRATE;
     uart_init.UART_Mode =UART_Mode_Rx | UART_Mode_Tx;
     UART_Init(BSP_UART_N32, &uart_init);
 		
@@ -77,9 +81,18 @@ static void fun_init(void)
 
     UART_ClearITPendingBit(BSP_UART_N32, UART_IT_RC);
     UART_ITConfig(BSP_UART_N32, UART_IT_RC, ENABLE);
+
     NVIC_ClearPendingIRQ(UART1_IRQn);
     NVIC_SetPriority(UART1_IRQn, 1);
     NVIC_EnableIRQ(UART1_IRQn);
+
+
+    UART_ClearITPendingBit(BSP_UART_AX6800, UART_IT_RC);
+    UART_ITConfig(BSP_UART_AX6800, UART_IT_RC, ENABLE);
+    
+    NVIC_ClearPendingIRQ(UART2_IRQn);
+    NVIC_SetPriority(UART2_IRQn, 1);
+    NVIC_EnableIRQ(UART2_IRQn);
 }
 
 /**

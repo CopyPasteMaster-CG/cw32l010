@@ -50,8 +50,9 @@ typedef struct
 
 uint8_t KVM_CRC8_Calculate(const uint8_t *data, uint8_t length);
 void KVM_UART_SendFrame(UART_TypeDef* UARTx,uint8_t cmd, uint8_t mode);
-void KVM_UART_HandleFrame(uint8_t cmd, uint8_t mode);
+void KVM_UART_HandleFrame(UART_TypeDef* forward_uart, uint8_t cmd, uint8_t mode);
 void KVM_UART_ReceiveByte(uint8_t byte);
+void KVM_UART_AX6800_ReceiveByte(uint8_t byte);
 
 
 #endif

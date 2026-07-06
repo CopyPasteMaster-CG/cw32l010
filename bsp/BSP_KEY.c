@@ -5,7 +5,7 @@
 static const BSP_GPIO_INFO_typedefstruct key_1={
     .irq_callback   =   NULL,                   //  无中断回调
     .mode           =   BSP_GPIO_MODE_INPUT,    //  输入模式
-    .num            =   GPIO_PIN_4,             //  引脚标号
+    .num            =   GPIO_PIN_2,             //  引脚标号
     .option         =   0,                      //  无自定义
     .port           =   CW_GPIOA,               //  引脚端口
     .pull           =   BSP_GPIO_PULL_UP,       //  无上下拉
