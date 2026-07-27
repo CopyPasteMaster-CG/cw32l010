@@ -2,14 +2,14 @@
 ;/*****************************************************************************/
 ;/*  Startup for ARM                                                          */
 ;/*  Version     V1.0                                                         */
-;/*  Date        2024-02-26                                                   */
+;/*  Date        2022-12-12                                                   */
 ;/*  Target-mcu  {MCU_PN_H}                                                   */
 ;/*****************************************************************************/
 
 ; Stack Configuration
 ; Stack Size (in Bytes) <0x0-0xFFFFFFFF:8>
 
-Stack_Size      EQU     0x00000400
+Stack_Size      EQU     0x00000200
 
                 AREA    STACK, NOINIT, READWRITE, ALIGN=3
 Stack_Mem       SPACE   Stack_Size
@@ -63,30 +63,30 @@ __Vectors
                 DCD     SYSCTRL_IRQHandler        ;< 4 SysCtrl Interupt Handler
                 DCD     GPIOA_IRQHandler          ;< 5 GPIOA Interrupt Handler
                 DCD     GPIOB_IRQHandler          ;< 6 GPIOB Interrupt Handler
-                DCD     0                         ;< 7 Reserved
-                DCD     0                         ;< 8 Reserved
-                DCD     0                         ;< 9 Reserved
-                DCD     0                         ;< 10 Reserved
-                DCD     0                         ;< 11 Reserved
+                DCD     GPIOC_GPIOD_IRQHandler    ;< 7 GPIOC And GPIOD Interrupt Handler
+                DCD     GPIOF_IRQHandler          ;< 8 GPIOF Interrupt Handler
+                DCD     DMACH1_IRQHandler         ;< 9 DMA Channel 1 Interrupt Handler
+                DCD     DMACH23_IRQHandler        ;< 10 DMA Channel 2/3 Interrupt Handler
+                DCD     DMACH4_IRQHandler         ;< 11 DMA Channel 4 Interrupt Handler
                 DCD     ADC_IRQHandler            ;< 12 ADC Interrupt Handler
                 DCD     ATIM_IRQHandler           ;< 13 Advanced Timer Interrupt Handler
                 DCD     VC1_IRQHandler            ;< 14 Voltage Comparator 1 Interrupt Handler
                 DCD     VC2_IRQHandler            ;< 15 Voltage Comparator 2 Interrupt Handler
                 DCD     GTIM1_IRQHandler          ;< 16 General Timer1 Interrupt Handler
-                DCD     0                         ;< 17 Reserved
-                DCD     0                         ;< 18 Reserved
-                DCD     LPTIM_IRQHandler           ;< 19 LPTIM Interrupt Handle
+                DCD     GTIM2_IRQHandler          ;< 17 General Timer2 Interrupt Handler
+                DCD     GTIM3_IRQHandler          ;< 18 General Timer3 Interrupt Handler
+                DCD     0                         ;< 19 Reserved
                 DCD     BTIM1_IRQHandler          ;< 20 BTIM1 Interrupt Handler
-                DCD     BTIM2_IRQHandler          ;< 21 BTIM2 Interrupt Handler
+                DCD     BTIM2_LPTIM_IRQHandler    ;< 21 BTIM2 And LPTIM Interrupt Handler
                 DCD     BTIM3_IRQHandler          ;< 22 BTIM3 Interrupt Handler
                 DCD     I2C1_IRQHandler           ;< 23 I2C1 Interrupt Handler
-                DCD     0                         ;< 24 Reserved
+                DCD     I2C2_IRQHandler           ;< 24 I2C2 Interrupt Handler
                 DCD     SPI1_IRQHandler           ;< 25 SPI1 Interrupt Handler
-                DCD     0                         ;< 26 Reserved
+                DCD     SPI2_IRQHandler           ;< 26 SPI2 Interrupt Handler
                 DCD     UART1_IRQHandler          ;< 27 UART1 Interrupt Handler
                 DCD     UART2_IRQHandler          ;< 28 UART2 Interrupt Handler
-                DCD     0                         ;< 29 Reserved
-                DCD     0                         ;< 30 Reserved
+                DCD     UART3_IRQHandler          ;< 29 UART3 Interrupt Handler
+                DCD     AUTOTRIM_LCD_IRQHandler   ;< 30 AWT And LCD Interrupt Handler
                 DCD     CLKFAULT_IRQHandler       ;< 31 CLKFAULT Interrupt Handler
 
                 
@@ -149,20 +149,30 @@ Default_Handler PROC
                 EXPORT  FLASHRAM_IRQHandler      [WEAK]
                 EXPORT  SYSCTRL_IRQHandler       [WEAK]
                 EXPORT  GPIOA_IRQHandler         [WEAK]
-                EXPORT  GPIOB_IRQHandler         [WEAK]               
+                EXPORT  GPIOB_IRQHandler         [WEAK]
+                EXPORT  GPIOC_GPIOD_IRQHandler   [WEAK]
+                EXPORT  GPIOF_IRQHandler         [WEAK]
+                EXPORT  DMACH1_IRQHandler        [WEAK]
+                EXPORT  DMACH23_IRQHandler       [WEAK]
+                EXPORT  DMACH4_IRQHandler        [WEAK]
                 EXPORT  ADC_IRQHandler           [WEAK]
                 EXPORT  ATIM_IRQHandler          [WEAK]
                 EXPORT  VC1_IRQHandler           [WEAK]
                 EXPORT  VC2_IRQHandler           [WEAK]
                 EXPORT  GTIM1_IRQHandler         [WEAK]
-                EXPORT  LPTIM_IRQHandler         [WEAK]                    
+                EXPORT  GTIM2_IRQHandler         [WEAK]
+                EXPORT  GTIM3_IRQHandler         [WEAK]
                 EXPORT  BTIM1_IRQHandler         [WEAK]
-                EXPORT  BTIM2_IRQHandler         [WEAK]
+                EXPORT  BTIM2_LPTIM_IRQHandler   [WEAK]
                 EXPORT  BTIM3_IRQHandler         [WEAK]
                 EXPORT  I2C1_IRQHandler          [WEAK]
+                EXPORT  I2C2_IRQHandler          [WEAK]
                 EXPORT  SPI1_IRQHandler          [WEAK]
+                EXPORT  SPI2_IRQHandler          [WEAK]
                 EXPORT  UART1_IRQHandler         [WEAK]
-                EXPORT  UART2_IRQHandler         [WEAK]               
+                EXPORT  UART2_IRQHandler         [WEAK]
+                EXPORT  UART3_IRQHandler         [WEAK]
+                EXPORT  AUTOTRIM_LCD_IRQHandler  [WEAK]
                 EXPORT  CLKFAULT_IRQHandler      [WEAK]
 
 WDT_IRQHandler
@@ -172,19 +182,29 @@ FLASHRAM_IRQHandler
 SYSCTRL_IRQHandler
 GPIOA_IRQHandler
 GPIOB_IRQHandler
+GPIOC_GPIOD_IRQHandler
+GPIOF_IRQHandler
+DMACH1_IRQHandler
+DMACH23_IRQHandler
+DMACH4_IRQHandler
 ADC_IRQHandler
 ATIM_IRQHandler
 VC1_IRQHandler
 VC2_IRQHandler
 GTIM1_IRQHandler
-LPTIM_IRQHandler
+GTIM2_IRQHandler
+GTIM3_IRQHandler
 BTIM1_IRQHandler
-BTIM2_IRQHandler
+BTIM2_LPTIM_IRQHandler
 BTIM3_IRQHandler
 I2C1_IRQHandler
+I2C2_IRQHandler
 SPI1_IRQHandler
+SPI2_IRQHandler
 UART1_IRQHandler
 UART2_IRQHandler
+UART3_IRQHandler
+AUTOTRIM_LCD_IRQHandler
 CLKFAULT_IRQHandler   
 
                 

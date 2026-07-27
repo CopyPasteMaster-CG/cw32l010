@@ -4,32 +4,24 @@
 
 static void uart_gpio_init(void)
 {
-    GPIO_InitTypeDef gpio_init = {0};
+    GPIO_InitTypeDef GPIO_InitStructure = {0};
 
-    __SYSCTRL_GPIOB_CLK_ENABLE();
-    __SYSCTRL_GPIOA_CLK_ENABLE();
-
-    gpio_init.Pins = GPIO_PIN_1;
-    gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
-    GPIO_Init(CW_GPIOB, &gpio_init);
-
-    gpio_init.Pins = GPIO_PIN_0;
-    gpio_init.Mode = GPIO_MODE_INPUT_PULLUP;
-    GPIO_Init(CW_GPIOB, &gpio_init);
-
-    PB01_AFx_UART1TXD();
-    PB00_AFx_UART1RXD();
-
-    gpio_init.Pins = GPIO_PIN_3;
-    gpio_init.Mode = GPIO_MODE_OUTPUT_PP;
-    GPIO_Init(CW_GPIOA, &gpio_init);
+    __RCC_GPIOB_CLK_ENABLE();
+    __RCC_GPIOA_CLK_ENABLE();
 		
-	gpio_init.Pins = GPIO_PIN_4;
-    gpio_init.Mode = GPIO_MODE_INPUT_PULLUP;
-    GPIO_Init(CW_GPIOA, &gpio_init);
+		PB00_AFx_UART2RXD();
+		PB01_AFx_UART2TXD();
     
-    PA03_AFx_UART2TXD();
-	PA04_AFx_UART2RXD();
+
+		GPIO_InitStructure.Pins = 1;
+    GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_Init(CW_GPIOB, &GPIO_InitStructure);
+
+    GPIO_InitStructure.Pins = 0;
+    GPIO_InitStructure.Mode = GPIO_MODE_INPUT_PULLUP;
+    GPIO_Init(CW_GPIOB, &GPIO_InitStructure);
+
+     
 }
 
 static void fun_init(void)
@@ -37,9 +29,9 @@ static void fun_init(void)
     UART_InitTypeDef uart_init = {0};
 
     uart_gpio_init();
-
-    SYSCTRL_APBPeriphClk_Enable1(BSP_UART_AX6800_CLK,ENABLE);
-    SYSCTRL_APBPeriphClk_Enable1(BSP_UART_N32_CLK,ENABLE);
+		
+    RCC_APBPeriphClk_Enable1(BSP_UART_N32_CLK,ENABLE);
+    RCC_APBPeriphClk_Enable2(BSP_UART_AX6800_CLK,ENABLE);
 
    
 

@@ -12,13 +12,18 @@ static inline bool ___FUN_GPIO_CLK_ENABLE(BSP_GPIO_INFO_typedefstruct const * co
     {
 #if defined ( CW_GPIOA )
     case ((uint32_t)(GPIOA_BASE)) :
-        __SYSCTRL_GPIOA_CLK_ENABLE();
+        __RCC_GPIOA_CLK_ENABLE();
         break ;
 #endif
 
 #if defined ( CW_GPIOB )
     case ((uint32_t)(GPIOB_BASE)) :
-        __SYSCTRL_GPIOB_CLK_ENABLE();  
+        __RCC_GPIOB_CLK_ENABLE();  
+        break ;
+#endif
+#if defined ( CW_GPIOC )
+    case ((uint32_t)(GPIOC_BASE)) :
+        __RCC_GPIOC_CLK_ENABLE();  
         break ;
 #endif
     default :

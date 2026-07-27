@@ -14,7 +14,7 @@
 /*
  * Define the Device Header File: 
  */
-#define CMSIS_device_header "cw32l010.h"
+#define CMSIS_device_header "cw32l052.h"
 
 
 

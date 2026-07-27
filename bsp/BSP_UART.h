@@ -2,7 +2,7 @@
 #define __BSP_UART_H__
 
 #include "BSP.h"
-#include "cw32l010_uart.h"
+#include "cw32l052_uart.h"
 
 
 /*============================================================
@@ -10,11 +10,12 @@
  *===========================================================*/
 
 /*  π”√UART2 */
-#define BSP_UART_AX6800                   CW_UART2
-#define BSP_UART_AX6800_CLK               SYSCTRL_APB1_PERIPH_UART2
+#define BSP_UART_AX6800                   CW_UART1
+#define BSP_UART_AX6800_CLK               RCC_APB2_PERIPH_UART1
 
-#define BSP_UART_N32                      CW_UART1
-#define BSP_UART_N32_CLK                  SYSCTRL_APB1_PERIPH_UART1
+#define BSP_UART_N32                      CW_UART2
+#define BSP_UART_N32_CLK                  RCC_APB1_PERIPH_UART2
+
 
 #define BSP_AX6800_UART_BAUDRATE          115200U
 

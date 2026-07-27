@@ -56,10 +56,10 @@ typedef double       float64_t;
 typedef char         char_t;
 
 /** function pointer type to void/void function */
-typedef void         (*func_ptr_t)(void);
+typedef void (*func_ptr_t)(void);
 
 /** function pointer type to void/uint8_t function */
-typedef void         (*func_ptr_arg1_t)(uint8_t u8Param);
+typedef void (*func_ptr_arg1_t)(uint8_t u8Param);
 
 typedef enum {RESET = 0, SET = !RESET} FlagStatus, ITStatus;
 

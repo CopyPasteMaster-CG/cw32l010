@@ -1,9 +1,8 @@
 
 #include "BSP_FLASH.h"
 #include "BSP.h"
-#include "cw32l010_flash.h"
-#include "cw32l010_sysctrl.h"
-
+#include "cw32l052_flash.h"
+#include "cw32l052_rcc.h"
 static void fun_data_dafault_set(BSP_FLASH_DATA_Typedefstruct * data)
 {
     memset(data, 0, sizeof(BSP_FLASH_DATA_Typedefstruct));
@@ -75,7 +74,7 @@ static void fun_init(BSP_FLASH_DATA_DEFAULT_Callback_typedef callback)
         data_default_callback = callback;
     }
     
-    __SYSCTRL_FLASH_CLK_ENABLE();
+    __RCC_FLASH_CLK_ENABLE();
     FLASH_LockAllPages();
     
     if(0){

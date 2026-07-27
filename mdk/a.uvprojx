@@ -10,19 +10,20 @@
       <TargetName>Target_1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>6240000::V6.24::ARMCLANG</pCCUsed>
-      <uAC6>1</uAC6>
+      <pArmCC>5060960::V5.06 update 7 (build 960)::.\ARMCC</pArmCC>
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
-          <Device>CW32L010F8</Device>
+          <Device>CW32L052C8</Device>
           <Vendor>WHXY</Vendor>
-          <PackID>WHXY.CW32L010_DFP.1.0.2</PackID>
-          <Cpu>IRAM(0x20000000,0x01000) IROM(0x00000000,0x10000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
+          <PackID>WHXY.CW32L052_DFP.1.0.0</PackID>
+          <Cpu>IRAM(0x20000000,0x02000) IROM(0x00000000,0x10000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
-          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0FlashCW32L010 -FS00 -FL010000 -FP0($$Device:CW32L010F8$Flash\FlashCW32L010.FLM))</FlashDriverDll>
+          <FlashDriverDll>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0FlashCW32L052 -FS00 -FL010000 -FP0($$Device:CW32L052C8$Flash\FlashCW32L052.FLM))</FlashDriverDll>
           <DeviceId>0</DeviceId>
-          <RegisterFile>$$Device:CW32L010F8$Device\Include\cw32l010.h</RegisterFile>
+          <RegisterFile>$$Device:CW32L052C8$Device\Include\cw32l052.h</RegisterFile>
           <MemoryEnv></MemoryEnv>
           <Cmp></Cmp>
           <Asm></Asm>
@@ -32,8 +33,8 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>$$Device:CW32L010F8$SVD\CW32L010.SFR</SFDFile>
-          <bCustSvd>0</bCustSvd>
+          <SFDFile>$$Device:CW32L052C8$SVD\CW32L052.svd</SFDFile>
+          <bCustSvd>1</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -137,7 +138,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3>"" ()</Flash3>
+          <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -171,8 +172,8 @@
             <AdsLsun>1</AdsLsun>
             <AdsLven>1</AdsLven>
             <AdsLsxf>1</AdsLsxf>
-            <RvctClst>0</RvctClst>
-            <GenPPlst>0</GenPPlst>
+            <RvctClst>1</RvctClst>
+            <GenPPlst>1</GenPPlst>
             <AdsCpuType>"Cortex-M0+"</AdsCpuType>
             <RvctDeviceName></RvctDeviceName>
             <mOS>0</mOS>
@@ -246,7 +247,7 @@
               <IRAM>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x1000</Size>
+                <Size>0x2000</Size>
               </IRAM>
               <IROM>
                 <Type>1</Type>
@@ -301,7 +302,7 @@
               <OCR_RVCT9>
                 <Type>0</Type>
                 <StartAddress>0x20000000</StartAddress>
-                <Size>0x1000</Size>
+                <Size>0x2000</Size>
               </OCR_RVCT9>
               <OCR_RVCT10>
                 <Type>0</Type>
@@ -322,7 +323,7 @@
             <PlainCh>0</PlainCh>
             <Ropi>0</Ropi>
             <Rwpi>0</Rwpi>
-            <wLevel>3</wLevel>
+            <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
@@ -384,9 +385,9 @@
           <GroupName>startup</GroupName>
           <Files>
             <File>
-              <FileName>startup_cw32l010.s</FileName>
+              <FileName>startup_cw32l052.s</FileName>
               <FileType>2</FileType>
-              <FilePath>..\start\startup_cw32l010.s</FilePath>
+              <FilePath>..\start\startup_cw32l052.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -394,119 +395,134 @@
           <GroupName>mcu_lib</GroupName>
           <Files>
             <File>
-              <FileName>cw32l010_adc.c</FileName>
+              <FileName>cw32l052_adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_adc.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_adc.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_atim.c</FileName>
+              <FileName>cw32l052_atim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_atim.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_atim.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_btim.c</FileName>
+              <FileName>cw32l052_autotrim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_btim.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_autotrim.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_crc.c</FileName>
+              <FileName>cw32l052_btim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_crc.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_btim.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_debug.c</FileName>
+              <FileName>cw32l052_crc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_debug.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_crc.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_digitalsign.c</FileName>
+              <FileName>cw32l052_debug.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_digitalsign.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_debug.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_flash.c</FileName>
+              <FileName>cw32l052_digitalsign.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_flash.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_digitalsign.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_gpio.c</FileName>
+              <FileName>cw32l052_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_gpio.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_dma.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_gtim.c</FileName>
+              <FileName>cw32l052_flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_gtim.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_flash.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_i2c.c</FileName>
+              <FileName>cw32l052_gpio.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_i2c.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_iwdt.c</FileName>
+              <FileName>cw32l052_gtim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_iwdt.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_gtim.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_lptim.c</FileName>
+              <FileName>cw32l052_i2c.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_lptim.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_i2c.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_lvd.c</FileName>
+              <FileName>cw32l052_iwdt.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_lvd.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_iwdt.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_pwr.c</FileName>
+              <FileName>cw32l052_lcd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_pwr.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_lcd.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_ram.c</FileName>
+              <FileName>cw32l052_lptim.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_ram.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_lptim.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_rtc.c</FileName>
+              <FileName>cw32l052_lvd.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_rtc.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_lvd.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_spi.c</FileName>
+              <FileName>cw32l052_pwr.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_spi.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_pwr.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_sysctrl.c</FileName>
+              <FileName>cw32l052_ram.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_sysctrl.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_ram.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_systick.c</FileName>
+              <FileName>cw32l052_rcc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_systick.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_rcc.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_uart.c</FileName>
+              <FileName>cw32l052_rtc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_uart.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_rtc.c</FilePath>
             </File>
             <File>
-              <FileName>cw32l010_vc.c</FileName>
+              <FileName>cw32l052_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\cw32l010_vc.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_spi.c</FilePath>
             </File>
             <File>
-              <FileName>i2c_eeprom.c</FileName>
+              <FileName>cw32l052_systick.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\i2c_eeprom.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_systick.c</FilePath>
             </File>
             <File>
-              <FileName>system_cw32l010.c</FileName>
+              <FileName>cw32l052_uart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\mcu_lib\src\system_cw32l010.c</FilePath>
+              <FilePath>..\mcu_lib\src\cw32l052_uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>cw32l052_vc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcu_lib\src\cw32l052_vc.c</FilePath>
+            </File>
+            <File>
+              <FileName>cw32l052_wwdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcu_lib\src\cw32l052_wwdt.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_cw32l052.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\mcu_lib\src\system_cw32l052.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -625,8 +641,8 @@
   <RTE>
     <apis/>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="6.1.1" condition="ARMv6_7_8-M Device" ymlID="CMSIS:CORE">
-        <package name="CMSIS" schemaVersion="1.7.40" url="https://www.keil.com/pack/" vendor="ARM" version="6.2.0"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.6.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.7.7" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
         <targetInfos>
           <targetInfo name="Target_1"/>
         </targetInfos>
