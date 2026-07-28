@@ -17,8 +17,8 @@ static void fun_loop(void)
 {
     static uint32_t usb_all_control_led_tick = 100;
     static uint32_t tick;
-    static uint32_t const delay_tick = 2;
-    bool check_ok;
+    static uint32_t const delay_tick = 10;
+    //bool check_ok;
     APP_KVM_DATA_Typedefstruct kvm;
     APP_SWITCH_DATA_Typedefstruct sw;
     

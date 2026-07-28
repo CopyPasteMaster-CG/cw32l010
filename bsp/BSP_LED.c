@@ -23,18 +23,18 @@ static const BSP_GPIO_INFO_typedefstruct led_3_4={
 static const BSP_GPIO_INFO_typedefstruct usb_1_2={
     .irq_callback   =   NULL,                   //  无中断回调
     .mode           =   BSP_GPIO_MODE_INPUT,    //  输入模式
-    .num            =   GPIO_PIN_5,             //  引脚标号
+    .num            =   GPIO_PIN_2,             //  引脚标号
     .option         =   0,                      //  无自定义
-    .port           =   CW_GPIOB,               //  引脚端口
+    .port           =   CW_GPIOA,               //  引脚端口
     .pull           =   BSP_GPIO_PULL_NO,       //  无上下拉
 };
 
 static const BSP_GPIO_INFO_typedefstruct usb_3_4={
     .irq_callback   =   NULL,                   //  无中断回调
     .mode           =   BSP_GPIO_MODE_INPUT,    //  输入模式
-    .num            =   GPIO_PIN_6,             //  引脚标号
+    .num            =   GPIO_PIN_3,             //  引脚标号
     .option         =   0,                      //  无自定义
-    .port           =   CW_GPIOB,               //  引脚端口
+    .port           =   CW_GPIOA,               //  引脚端口
     .pull           =   BSP_GPIO_PULL_NO,       //  无上下拉
 };
 
@@ -87,46 +87,46 @@ static void led_4_off(void)
 //  USB-1号指示灯点亮
 static void led_usb_1_on(void)
 {
-    PB05_SETLOW();      //  低电平 点亮led1，熄灭led2
-    PB05_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
+    PA02_SETLOW();      //  低电平 点亮led1，熄灭led2
+    PA02_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
 }
 //  USB-1号指示灯熄灭
 static void led_usb_1_off(void)
 {
-    PB05_DIR_INPUT();   //  输入模式，两颗led都会熄灭
+    PA02_DIR_INPUT();   //  输入模式，两颗led都会熄灭
 }
 //  USB-2号指示灯点亮
 static void led_usb_2_on(void)
 {
-    PB05_SETHIGH();     //  高电平 点亮led2，熄灭led1
-    PB05_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
+    PA02_SETHIGH();     //  高电平 点亮led2，熄灭led1
+    PA02_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
 }
 //  USB-2号指示灯熄灭
 static void led_usb_2_off(void)
 {
-    PB05_DIR_INPUT();   //  输入模式，两颗led都会熄灭
+    PA02_DIR_INPUT();   //  输入模式，两颗led都会熄灭
 }
 //  USB-3号指示灯点亮
 static void led_usb_3_on(void)
 {
-    PB06_SETLOW();      //  低电平 点亮led3，熄灭led4
-    PB06_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
+    PA03_SETLOW();      //  低电平 点亮led3，熄灭led4
+    PA03_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
 }
 //  USB-3号指示灯熄灭
 static void led_usb_3_off(void)
 {
-    PB06_DIR_INPUT();   //  输入模式，两颗led都会熄灭
+    PA03_DIR_INPUT();   //  输入模式，两颗led都会熄灭
 }
 //  USB-4号指示灯点亮
 static void led_usb_4_on(void)
 {
-    PB06_SETHIGH();     //  高电平 点亮led4，熄灭led3
-    PB06_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
+    PA03_SETHIGH();     //  高电平 点亮led4，熄灭led3
+    PA03_DIR_OUTPUT();  //  输出模式，必定点亮1颗led
 }
 //  USB-4号指示灯熄灭
 static void led_usb_4_off(void)
 {
-    PB06_DIR_INPUT();   //  输入模式，两颗led都会熄灭
+    PA03_DIR_INPUT();   //  输入模式，两颗led都会熄灭
 }
 
 //  指示灯动作分组

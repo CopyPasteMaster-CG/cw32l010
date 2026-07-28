@@ -7,19 +7,28 @@ static void uart_gpio_init(void)
     GPIO_InitTypeDef GPIO_InitStructure = {0};
 
     __RCC_GPIOB_CLK_ENABLE();
-    __RCC_GPIOA_CLK_ENABLE();
+    __RCC_GPIOC_CLK_ENABLE();
 		
-		PB00_AFx_UART2RXD();
-		PB01_AFx_UART2TXD();
-    
+    PB00_AFx_UART2RXD();
+    PB01_AFx_UART2TXD();
+    PC14_AFx_UART1TXD();
+    PC15_AFx_UART1RXD();
 
-		GPIO_InitStructure.Pins = 1;
+	GPIO_InitStructure.Pins = GPIO_PIN_1;
     GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_Init(CW_GPIOB, &GPIO_InitStructure);
 
-    GPIO_InitStructure.Pins = 0;
+    GPIO_InitStructure.Pins = GPIO_PIN_0;
     GPIO_InitStructure.Mode = GPIO_MODE_INPUT_PULLUP;
     GPIO_Init(CW_GPIOB, &GPIO_InitStructure);
+
+    GPIO_InitStructure.Pins = GPIO_PIN_14;
+    GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_Init(CW_GPIOC, &GPIO_InitStructure);
+
+    GPIO_InitStructure.Pins = GPIO_PIN_15;
+    GPIO_InitStructure.Mode = GPIO_MODE_INPUT_PULLUP;
+    GPIO_Init(CW_GPIOC, &GPIO_InitStructure);
 
      
 }
@@ -41,10 +50,7 @@ static void fun_init(void)
     /* UART时钟源选择PCLK */
     uart_init.UART_Source = UART_Source_PCLK;
 
-    /*
-     * 告诉UART库函数：
-     * 当前UART输入时钟为8MHz。
-     */
+
     uart_init.UART_UclkFreq = BSP_UART_UCLK_FREQ;
 
     /* 起始位检测方式 */
@@ -71,17 +77,16 @@ static void fun_init(void)
 		 /* 开启发送 */
 
 
-    UART_ClearITPendingBit(BSP_UART_N32, UART_IT_RC);
-    UART_ITConfig(BSP_UART_N32, UART_IT_RC, ENABLE);
-
-    NVIC_ClearPendingIRQ(UART1_IRQn);
-    NVIC_SetPriority(UART1_IRQn, 1);
-    NVIC_EnableIRQ(UART1_IRQn);
-
+    UART_ClearITPendingBit(BSP_UART_N32, UART_IT_RC);//清除串口接收完成中断，避免刚使能就进入中断
+    UART_ITConfig(BSP_UART_N32, UART_IT_RC, ENABLE); //使能串口接收完成中断
 
     UART_ClearITPendingBit(BSP_UART_AX6800, UART_IT_RC);
     UART_ITConfig(BSP_UART_AX6800, UART_IT_RC, ENABLE);
-    
+
+    NVIC_ClearPendingIRQ(UART1_IRQn);               //清除串口在nvic的挂起状态  
+    NVIC_SetPriority(UART1_IRQn, 1);                //设置串口在nvic中断优先级
+    NVIC_EnableIRQ(UART1_IRQn);                     //在nvic中使能全局中断
+
     NVIC_ClearPendingIRQ(UART2_IRQn);
     NVIC_SetPriority(UART2_IRQn, 1);
     NVIC_EnableIRQ(UART2_IRQn);
